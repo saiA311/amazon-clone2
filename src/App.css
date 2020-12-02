@@ -211,6 +211,8 @@
   height: 4vh;
   width: fit-content;
   outline: none;
+  border:1px solid;
+  border-radius: 2px;
   border-color: #a88734 #9c7e31 #846a29;
   font-size: clamp(0.3rem, 2.5vw, 0.8rem);
 }

@@ -1,0 +1,39 @@
+.checkout {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  background-color: #fff;
+  height: max-content;
+  min-height: 74vh;
+
+  &__ad {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 10rem;
+  }
+
+  &__title {
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+  }
+  &__right {
+    margin-top: 1rem;
+    justify-self: center;
+  }
+  @media (min-width: 600px) {
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    height: max-content;
+    margin: 1rem auto;
+    &__left {
+      flex: 1;
+      max-width: 950px;
+    }
+    &__right {
+      margin-top: 0;
+    }
+  }
+}
+@import "./subtotal";

@@ -1,0 +1,43 @@
+//Product component
+.product {
+  background-color: rgb(211, 220, 224);
+  max-width: 90%;
+  padding: 0.2rem;
+  z-index: 1;
+  &__info {
+    height: 100%;
+    display: grid;
+    align-items: end;
+    grid-template-columns: 1fr;
+  }
+  &__info-img {
+    max-width: 170px;
+    max-height: 150px;
+    width: 80%;
+    object-fit: contain;
+    justify-self: center;
+  }
+  &__info-rating {
+    display: flex;
+    align-self: end;
+  }
+  &__info-btn {
+    align-self: end;
+    background: #f0c14b;
+    justify-self: center;
+    max-height: 200px;
+    height: 4vh;
+    width: fit-content;
+    outline: none;
+    border:1px solid;
+    border-radius: 2px;
+    border-color: #a88734 #9c7e31 #846a29;
+    font-size: clamp(0.3rem, 2.5vw, 0.8rem);
+  }
+  &__info-price {
+    font-weight: bold;
+  }
+  &__info-title {
+    font-weight: 400;
+  }
+}

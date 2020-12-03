@@ -1,0 +1,34 @@
+.item {
+  display: grid;
+  margin-top: 0.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  border-radius: 5px;
+  align-items: space-between;
+  background: linear-gradient(
+    to bottom right,
+    rgb(15, 15, 153),
+    rgb(92, 11, 92)
+  );
+  color: #fff;
+  &__info-img {
+    height: 6rem;
+  }
+  & > p {
+    align-self: center;
+    justify-self: center;
+  }
+  &__info-rating {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+  }
+  &__remove-btn {
+    position: relative;
+    align-self: center;
+    justify-self: right;
+    border-radius: 50px;
+    &-icon {
+      pointer-events: none;
+    }
+  }
+}
